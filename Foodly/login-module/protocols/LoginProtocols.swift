@@ -9,7 +9,7 @@ import Foundation
 
 protocol ViewToPresenterLoginProtocol {
     var loginInteractor : PresenterToInteractorLoginProtocol? {get set}
-    func loginAll(email : String, password : String )
+    func loginAll(email : String, password : String)
 }
 
 protocol PresenterToInteractorLoginProtocol {

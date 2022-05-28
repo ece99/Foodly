@@ -38,6 +38,7 @@ class LoginVC: UIViewController {
                     self.navigationController?.popToRootViewController(animated: true)
                 }
                 alert.addAction(OKAction)
+    
                 self.present(alert, animated: true)
                 print("No user is signed in.")
             }

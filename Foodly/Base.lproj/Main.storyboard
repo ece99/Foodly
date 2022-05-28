@@ -615,6 +615,7 @@
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="person" catalog="system" id="yrC-Ix-ENN"/>
                     <connections>
                         <outlet property="emailTextField" destination="azZ-qi-qAz" id="YfX-C0-igI"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLoginPage" modalPresentationStyle="fullScreen" id="GYH-PQ-TAU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnv-bF-Vy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -679,7 +680,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4XT-dh-0lH"/>
+        <segue reference="GYH-PQ-TAU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
