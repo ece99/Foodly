@@ -16,6 +16,20 @@
 		37E97ABE28424EEE000897A7 /* FoodlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97ABD28424EEE000897A7 /* FoodlyTests.swift */; };
 		37E97AC828424EEE000897A7 /* FoodlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97AC728424EEE000897A7 /* FoodlyUITests.swift */; };
 		37E97ACA28424EEE000897A7 /* FoodlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97AC928424EEE000897A7 /* FoodlyUITestsLaunchTests.swift */; };
+		37E97AFB28425FF4000897A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37E97AFA28425FF4000897A7 /* GoogleService-Info.plist */; };
+		37E97AFE284261C0000897A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37E97AFD284261C0000897A7 /* FirebaseAuth */; };
+		37E97B01284262B6000897A7 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B00284262B6000897A7 /* Foods.swift */; };
+		37E97B03284262CC000897A7 /* FoodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B02284262CC000897A7 /* FoodsResponse.swift */; };
+		37E97B052842631A000897A7 /* FoodsInBasket.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B042842631A000897A7 /* FoodsInBasket.swift.swift */; };
+		37E97B0728426328000897A7 /* FoodsInBasketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B0628426328000897A7 /* FoodsInBasketResponse.swift */; };
+		37E97B0928426703000897A7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B0828426703000897A7 /* LoginVC.swift */; };
+		37E97B0B28426715000897A7 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B0A28426715000897A7 /* RegisterVC.swift */; };
+		37E97B0D284269EC000897A7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B0C284269EC000897A7 /* ProfileVC.swift */; };
+		37E97B0F28426A0A000897A7 /* FoodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B0E28426A0A000897A7 /* FoodsVC.swift */; };
+		37E97B1128426A1C000897A7 /* FoodDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1028426A1C000897A7 /* FoodDetailVC.swift */; };
+		37E97B1328426A32000897A7 /* BasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1228426A32000897A7 /* BasketVC.swift */; };
+		37E97B162842775B000897A7 /* FoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B152842775B000897A7 /* FoodsCollectionViewCell.swift */; };
+		37E97B1928427931000897A7 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1828427931000897A7 /* BasketTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,19 @@
 		37E97AC328424EEE000897A7 /* FoodlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E97AC728424EEE000897A7 /* FoodlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodlyUITests.swift; sourceTree = "<group>"; };
 		37E97AC928424EEE000897A7 /* FoodlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37E97AFA28425FF4000897A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37E97B00284262B6000897A7 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		37E97B02284262CC000897A7 /* FoodsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsResponse.swift; sourceTree = "<group>"; };
+		37E97B042842631A000897A7 /* FoodsInBasket.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsInBasket.swift.swift; sourceTree = "<group>"; };
+		37E97B0628426328000897A7 /* FoodsInBasketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsInBasketResponse.swift; sourceTree = "<group>"; };
+		37E97B0828426703000897A7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		37E97B0A28426715000897A7 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		37E97B0C284269EC000897A7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		37E97B0E28426A0A000897A7 /* FoodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsVC.swift; sourceTree = "<group>"; };
+		37E97B1028426A1C000897A7 /* FoodDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailVC.swift; sourceTree = "<group>"; };
+		37E97B1228426A32000897A7 /* BasketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketVC.swift; sourceTree = "<group>"; };
+		37E97B152842775B000897A7 /* FoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCollectionViewCell.swift; sourceTree = "<group>"; };
+		37E97B1828427931000897A7 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E97AFE284261C0000897A7 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +127,13 @@
 		37E97AA528424EEC000897A7 /* Foodly */ = {
 			isa = PBXGroup;
 			children = (
+				37E97AFF2842629D000897A7 /* entity */,
+				37E97AD728425D4B000897A7 /* register-module */,
+				37E97AD628425D44000897A7 /* login-module */,
+				37E97AD828425D6B000897A7 /* profile-module */,
+				37E97AD928425D85000897A7 /* foods-module */,
+				37E97ADA28425D8D000897A7 /* food-detail-module */,
+				37E97ADB28425D96000897A7 /* basket-module */,
 				37E97AA628424EEC000897A7 /* AppDelegate.swift */,
 				37E97AA828424EEC000897A7 /* SceneDelegate.swift */,
 				37E97AAA28424EEC000897A7 /* ViewController.swift */,
@@ -106,6 +141,7 @@
 				37E97AAF28424EEE000897A7 /* Assets.xcassets */,
 				37E97AB128424EEE000897A7 /* LaunchScreen.storyboard */,
 				37E97AB428424EEE000897A7 /* Info.plist */,
+				37E97AFA28425FF4000897A7 /* GoogleService-Info.plist */,
 			);
 			path = Foodly;
 			sourceTree = "<group>";
@@ -127,6 +163,323 @@
 			path = FoodlyUITests;
 			sourceTree = "<group>";
 		};
+		37E97AD628425D44000897A7 /* login-module */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AF428425E70000897A7 /* protocols */,
+				37E97AF328425E68000897A7 /* router */,
+				37E97AF228425E5F000897A7 /* interactor */,
+				37E97AF128425E5A000897A7 /* presenter */,
+				37E97AF028425E57000897A7 /* view */,
+			);
+			path = "login-module";
+			sourceTree = "<group>";
+		};
+		37E97AD728425D4B000897A7 /* register-module */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AF928425E8F000897A7 /* protocols */,
+				37E97AF828425E87000897A7 /* router */,
+				37E97AF728425E81000897A7 /* interactor */,
+				37E97AF628425E7B000897A7 /* presenter */,
+				37E97AF528425E76000897A7 /* view */,
+			);
+			path = "register-module";
+			sourceTree = "<group>";
+		};
+		37E97AD828425D6B000897A7 /* profile-module */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AEF28425E50000897A7 /* protocols */,
+				37E97AEE28425E4B000897A7 /* router */,
+				37E97AED28425E46000897A7 /* interactor */,
+				37E97AEC28425E42000897A7 /* presenter */,
+				37E97AEB28425E3F000897A7 /* view */,
+			);
+			path = "profile-module";
+			sourceTree = "<group>";
+		};
+		37E97AD928425D85000897A7 /* foods-module */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AEA28425E36000897A7 /* protocols */,
+				37E97AE928425E31000897A7 /* router */,
+				37E97AE828425E2C000897A7 /* interactor */,
+				37E97AE728425E27000897A7 /* presenter */,
+				37E97AE628425E23000897A7 /* view */,
+			);
+			path = "foods-module";
+			sourceTree = "<group>";
+		};
+		37E97ADA28425D8D000897A7 /* food-detail-module */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AE528425E1D000897A7 /* protocols */,
+				37E97AE428425E17000897A7 /* router */,
+				37E97AE328425E10000897A7 /* interactor */,
+				37E97AE228425E0B000897A7 /* presenter */,
+				37E97AE128425E08000897A7 /* view */,
+			);
+			path = "food-detail-module";
+			sourceTree = "<group>";
+		};
+		37E97ADB28425D96000897A7 /* basket-module */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AE028425DFC000897A7 /* protocols */,
+				37E97ADF28425DEF000897A7 /* router */,
+				37E97ADE28425DE4000897A7 /* interactor */,
+				37E97ADD28425DDD000897A7 /* presenter */,
+				37E97ADC28425DD6000897A7 /* view */,
+			);
+			path = "basket-module";
+			sourceTree = "<group>";
+		};
+		37E97ADC28425DD6000897A7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B1728427917000897A7 /* table-view */,
+				37E97B1228426A32000897A7 /* BasketVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37E97ADD28425DDD000897A7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37E97ADE28425DE4000897A7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37E97ADF28425DEF000897A7 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37E97AE028425DFC000897A7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		37E97AE128425E08000897A7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B1028426A1C000897A7 /* FoodDetailVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37E97AE228425E0B000897A7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37E97AE328425E10000897A7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37E97AE428425E17000897A7 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37E97AE528425E1D000897A7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		37E97AE628425E23000897A7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B142842773B000897A7 /* collection-view */,
+				37E97B0E28426A0A000897A7 /* FoodsVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37E97AE728425E27000897A7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37E97AE828425E2C000897A7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37E97AE928425E31000897A7 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37E97AEA28425E36000897A7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		37E97AEB28425E3F000897A7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B0C284269EC000897A7 /* ProfileVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37E97AEC28425E42000897A7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37E97AED28425E46000897A7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37E97AEE28425E4B000897A7 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37E97AEF28425E50000897A7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		37E97AF028425E57000897A7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B0828426703000897A7 /* LoginVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37E97AF128425E5A000897A7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37E97AF228425E5F000897A7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37E97AF328425E68000897A7 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37E97AF428425E70000897A7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		37E97AF528425E76000897A7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B0A28426715000897A7 /* RegisterVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37E97AF628425E7B000897A7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37E97AF728425E81000897A7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37E97AF828425E87000897A7 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37E97AF928425E8F000897A7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		37E97AFF2842629D000897A7 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B00284262B6000897A7 /* Foods.swift */,
+				37E97B02284262CC000897A7 /* FoodsResponse.swift */,
+				37E97B042842631A000897A7 /* FoodsInBasket.swift.swift */,
+				37E97B0628426328000897A7 /* FoodsInBasketResponse.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		37E97B142842773B000897A7 /* collection-view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B152842775B000897A7 /* FoodsCollectionViewCell.swift */,
+			);
+			path = "collection-view";
+			sourceTree = "<group>";
+		};
+		37E97B1728427917000897A7 /* table-view */ = {
+			isa = PBXGroup;
+			children = (
+				37E97B1828427931000897A7 /* BasketTableViewCell.swift */,
+			);
+			path = "table-view";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +496,9 @@
 			dependencies = (
 			);
 			name = Foodly;
+			packageProductDependencies = (
+				37E97AFD284261C0000897A7 /* FirebaseAuth */,
+			);
 			productName = Foodly;
 			productReference = 37E97AA328424EEC000897A7 /* Foodly.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +571,9 @@
 				Base,
 			);
 			mainGroup = 37E97A9A28424EEC000897A7;
+			packageReferences = (
+				37E97AFC284261C0000897A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 37E97AA428424EEC000897A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E97AB328424EEE000897A7 /* LaunchScreen.storyboard in Resources */,
+				37E97AFB28425FF4000897A7 /* GoogleService-Info.plist in Resources */,
 				37E97AB028424EEE000897A7 /* Assets.xcassets in Resources */,
 				37E97AAE28424EEC000897A7 /* Main.storyboard in Resources */,
 			);
@@ -258,8 +618,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E97B162842775B000897A7 /* FoodsCollectionViewCell.swift in Sources */,
+				37E97B1328426A32000897A7 /* BasketVC.swift in Sources */,
+				37E97B0F28426A0A000897A7 /* FoodsVC.swift in Sources */,
+				37E97B0D284269EC000897A7 /* ProfileVC.swift in Sources */,
+				37E97B0728426328000897A7 /* FoodsInBasketResponse.swift in Sources */,
 				37E97AAB28424EEC000897A7 /* ViewController.swift in Sources */,
+				37E97B0928426703000897A7 /* LoginVC.swift in Sources */,
+				37E97B052842631A000897A7 /* FoodsInBasket.swift.swift in Sources */,
+				37E97B01284262B6000897A7 /* Foods.swift in Sources */,
+				37E97B03284262CC000897A7 /* FoodsResponse.swift in Sources */,
+				37E97B0B28426715000897A7 /* RegisterVC.swift in Sources */,
+				37E97B1128426A1C000897A7 /* FoodDetailVC.swift in Sources */,
 				37E97AA728424EEC000897A7 /* AppDelegate.swift in Sources */,
+				37E97B1928427931000897A7 /* BasketTableViewCell.swift in Sources */,
 				37E97AA928424EEC000897A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +996,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37E97AFC284261C0000897A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37E97AFD284261C0000897A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37E97AFC284261C0000897A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37E97A9B28424EEC000897A7 /* Project object */;
 }
