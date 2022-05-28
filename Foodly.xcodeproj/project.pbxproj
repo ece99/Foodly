@@ -42,6 +42,21 @@
 		37E97B2D28428067000897A7 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2C28428067000897A7 /* ProfileRouter.swift */; };
 		37E97B2F28428076000897A7 /* ProfileInteractor.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2E28428076000897A7 /* ProfileInteractor.swift.swift */; };
 		37E97B3128428080000897A7 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B3028428080000897A7 /* ProfilePresenter.swift */; };
+		37E97B33284283A3000897A7 /* FoodsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B32284283A3000897A7 /* FoodsProtocols.swift */; };
+		37E97B35284283B0000897A7 /* FoodsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B34284283B0000897A7 /* FoodsRouter.swift */; };
+		37E97B37284283BB000897A7 /* FoodsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B36284283BB000897A7 /* FoodsInteractor.swift */; };
+		37E97B39284283C8000897A7 /* FoodsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B38284283C8000897A7 /* FoodsPresenter.swift */; };
+		37E97B3C28428A90000897A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 37E97B3B28428A90000897A7 /* Kingfisher */; };
+		37E97B3E2842903C000897A7 /* FoodDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B3D2842903C000897A7 /* FoodDetailProtocols.swift */; };
+		37E97B4228429054000897A7 /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4128429054000897A7 /* FoodInteractor.swift */; };
+		37E97B4428429066000897A7 /* FoodDetailPresenter.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4328429066000897A7 /* FoodDetailPresenter.swift.swift */; };
+		37E97B4628429079000897A7 /* FoodDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4528429079000897A7 /* FoodDetailRouter.swift */; };
+		37E97B48284291B2000897A7 /* AddingFoodToBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B47284291B2000897A7 /* AddingFoodToBasket.swift */; };
+		37E97B4A28429528000897A7 /* BasketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4928429528000897A7 /* BasketProtocols.swift */; };
+		37E97B4C28429534000897A7 /* BasketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4B28429534000897A7 /* BasketRouter.swift */; };
+		37E97B4E2842953F000897A7 /* BasketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4D2842953E000897A7 /* BasketInteractor.swift */; };
+		37E97B502842954A000897A7 /* BasketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4F2842954A000897A7 /* BasketPresenter.swift */; };
+		37E97B5228429B02000897A7 /* DeleteFromBasketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B5128429B02000897A7 /* DeleteFromBasketResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +115,20 @@
 		37E97B2C28428067000897A7 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		37E97B2E28428076000897A7 /* ProfileInteractor.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift.swift; sourceTree = "<group>"; };
 		37E97B3028428080000897A7 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		37E97B32284283A3000897A7 /* FoodsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsProtocols.swift; sourceTree = "<group>"; };
+		37E97B34284283B0000897A7 /* FoodsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsRouter.swift; sourceTree = "<group>"; };
+		37E97B36284283BB000897A7 /* FoodsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsInteractor.swift; sourceTree = "<group>"; };
+		37E97B38284283C8000897A7 /* FoodsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsPresenter.swift; sourceTree = "<group>"; };
+		37E97B3D2842903C000897A7 /* FoodDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailProtocols.swift; sourceTree = "<group>"; };
+		37E97B4128429054000897A7 /* FoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInteractor.swift; sourceTree = "<group>"; };
+		37E97B4328429066000897A7 /* FoodDetailPresenter.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailPresenter.swift.swift; sourceTree = "<group>"; };
+		37E97B4528429079000897A7 /* FoodDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailRouter.swift; sourceTree = "<group>"; };
+		37E97B47284291B2000897A7 /* AddingFoodToBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFoodToBasket.swift; sourceTree = "<group>"; };
+		37E97B4928429528000897A7 /* BasketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketProtocols.swift; sourceTree = "<group>"; };
+		37E97B4B28429534000897A7 /* BasketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRouter.swift; sourceTree = "<group>"; };
+		37E97B4D2842953E000897A7 /* BasketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketInteractor.swift; sourceTree = "<group>"; };
+		37E97B4F2842954A000897A7 /* BasketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPresenter.swift; sourceTree = "<group>"; };
+		37E97B5128429B02000897A7 /* DeleteFromBasketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromBasketResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E97B3C28428A90000897A7 /* Kingfisher in Frameworks */,
 				37E97AFE284261C0000897A7 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +301,7 @@
 		37E97ADD28425DDD000897A7 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4F2842954A000897A7 /* BasketPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -278,6 +309,7 @@
 		37E97ADE28425DE4000897A7 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4D2842953E000897A7 /* BasketInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -285,6 +317,7 @@
 		37E97ADF28425DEF000897A7 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4B28429534000897A7 /* BasketRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -292,6 +325,7 @@
 		37E97AE028425DFC000897A7 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4928429528000897A7 /* BasketProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -307,6 +341,7 @@
 		37E97AE228425E0B000897A7 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4328429066000897A7 /* FoodDetailPresenter.swift.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -314,6 +349,7 @@
 		37E97AE328425E10000897A7 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4128429054000897A7 /* FoodInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -321,6 +357,7 @@
 		37E97AE428425E17000897A7 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B4528429079000897A7 /* FoodDetailRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -328,6 +365,7 @@
 		37E97AE528425E1D000897A7 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B3D2842903C000897A7 /* FoodDetailProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -344,6 +382,7 @@
 		37E97AE728425E27000897A7 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B38284283C8000897A7 /* FoodsPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -351,6 +390,7 @@
 		37E97AE828425E2C000897A7 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B36284283BB000897A7 /* FoodsInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -358,6 +398,7 @@
 		37E97AE928425E31000897A7 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B34284283B0000897A7 /* FoodsRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -365,6 +406,7 @@
 		37E97AEA28425E36000897A7 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B32284283A3000897A7 /* FoodsProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -496,6 +538,8 @@
 				37E97B02284262CC000897A7 /* FoodsResponse.swift */,
 				37E97B042842631A000897A7 /* FoodsInBasket.swift.swift */,
 				37E97B0628426328000897A7 /* FoodsInBasketResponse.swift */,
+				37E97B47284291B2000897A7 /* AddingFoodToBasket.swift */,
+				37E97B5128429B02000897A7 /* DeleteFromBasketResponse.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -534,6 +578,7 @@
 			name = Foodly;
 			packageProductDependencies = (
 				37E97AFD284261C0000897A7 /* FirebaseAuth */,
+				37E97B3B28428A90000897A7 /* Kingfisher */,
 			);
 			productName = Foodly;
 			productReference = 37E97AA328424EEC000897A7 /* Foodly.app */;
@@ -609,6 +654,7 @@
 			mainGroup = 37E97A9A28424EEC000897A7;
 			packageReferences = (
 				37E97AFC284261C0000897A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				37E97B3A28428A90000897A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 37E97AA428424EEC000897A7 /* Products */;
 			projectDirPath = "";
@@ -654,9 +700,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E97B39284283C8000897A7 /* FoodsPresenter.swift in Sources */,
 				37E97B162842775B000897A7 /* FoodsCollectionViewCell.swift in Sources */,
+				37E97B35284283B0000897A7 /* FoodsRouter.swift in Sources */,
 				37E97B2328427CE8000897A7 /* LoginProtocols.swift in Sources */,
 				37E97B2928427D0A000897A7 /* LoginPresenter.swift in Sources */,
+				37E97B4E2842953F000897A7 /* BasketInteractor.swift in Sources */,
+				37E97B4628429079000897A7 /* FoodDetailRouter.swift in Sources */,
+				37E97B4A28429528000897A7 /* BasketProtocols.swift in Sources */,
+				37E97B33284283A3000897A7 /* FoodsProtocols.swift in Sources */,
 				37E97B1328426A32000897A7 /* BasketVC.swift in Sources */,
 				37E97B2128427B77000897A7 /* RegisterPresenter.swift.swift in Sources */,
 				37E97B2F28428076000897A7 /* ProfileInteractor.swift.swift in Sources */,
@@ -666,20 +718,28 @@
 				37E97B0D284269EC000897A7 /* ProfileVC.swift in Sources */,
 				37E97B0728426328000897A7 /* FoodsInBasketResponse.swift in Sources */,
 				37E97AAB28424EEC000897A7 /* ViewController.swift in Sources */,
+				37E97B5228429B02000897A7 /* DeleteFromBasketResponse.swift in Sources */,
 				37E97B0928426703000897A7 /* LoginVC.swift in Sources */,
 				37E97B052842631A000897A7 /* FoodsInBasket.swift.swift in Sources */,
 				37E97B01284262B6000897A7 /* Foods.swift in Sources */,
 				37E97B2728427CFF000897A7 /* LoginInteractor.swift in Sources */,
 				37E97B1F28427B69000897A7 /* RegisterInteractor.swift in Sources */,
+				37E97B3E2842903C000897A7 /* FoodDetailProtocols.swift in Sources */,
 				37E97B03284262CC000897A7 /* FoodsResponse.swift in Sources */,
+				37E97B48284291B2000897A7 /* AddingFoodToBasket.swift in Sources */,
 				37E97B0B28426715000897A7 /* RegisterVC.swift in Sources */,
 				37E97B1128426A1C000897A7 /* FoodDetailVC.swift in Sources */,
 				37E97B2D28428067000897A7 /* ProfileRouter.swift in Sources */,
+				37E97B4428429066000897A7 /* FoodDetailPresenter.swift.swift in Sources */,
 				37E97B1D28427B5C000897A7 /* RegisterRouter.swift.swift in Sources */,
 				37E97AA728424EEC000897A7 /* AppDelegate.swift in Sources */,
 				37E97B3128428080000897A7 /* ProfilePresenter.swift in Sources */,
+				37E97B4C28429534000897A7 /* BasketRouter.swift in Sources */,
+				37E97B502842954A000897A7 /* BasketPresenter.swift in Sources */,
 				37E97B1B28427B4C000897A7 /* RegisterProtocols.swift.swift in Sources */,
+				37E97B4228429054000897A7 /* FoodInteractor.swift in Sources */,
 				37E97B1928427931000897A7 /* BasketTableViewCell.swift in Sources */,
+				37E97B37284283BB000897A7 /* FoodsInteractor.swift in Sources */,
 				37E97AA928424EEC000897A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,6 +1114,14 @@
 				kind = branch;
 			};
 		};
+		37E97B3A28428A90000897A7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1061,6 +1129,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37E97AFC284261C0000897A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		37E97B3B28428A90000897A7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37E97B3A28428A90000897A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
