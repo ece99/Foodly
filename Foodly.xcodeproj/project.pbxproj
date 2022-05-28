@@ -30,6 +30,14 @@
 		37E97B1328426A32000897A7 /* BasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1228426A32000897A7 /* BasketVC.swift */; };
 		37E97B162842775B000897A7 /* FoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B152842775B000897A7 /* FoodsCollectionViewCell.swift */; };
 		37E97B1928427931000897A7 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1828427931000897A7 /* BasketTableViewCell.swift */; };
+		37E97B1B28427B4C000897A7 /* RegisterProtocols.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1A28427B4C000897A7 /* RegisterProtocols.swift.swift */; };
+		37E97B1D28427B5C000897A7 /* RegisterRouter.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1C28427B5C000897A7 /* RegisterRouter.swift.swift */; };
+		37E97B1F28427B69000897A7 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B1E28427B68000897A7 /* RegisterInteractor.swift */; };
+		37E97B2128427B77000897A7 /* RegisterPresenter.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2028427B77000897A7 /* RegisterPresenter.swift.swift */; };
+		37E97B2328427CE8000897A7 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2228427CE8000897A7 /* LoginProtocols.swift */; };
+		37E97B2528427CF4000897A7 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2428427CF4000897A7 /* LoginRouter.swift */; };
+		37E97B2728427CFF000897A7 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2628427CFF000897A7 /* LoginInteractor.swift */; };
+		37E97B2928427D0A000897A7 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B2828427D0A000897A7 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +84,14 @@
 		37E97B1228426A32000897A7 /* BasketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketVC.swift; sourceTree = "<group>"; };
 		37E97B152842775B000897A7 /* FoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCollectionViewCell.swift; sourceTree = "<group>"; };
 		37E97B1828427931000897A7 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		37E97B1A28427B4C000897A7 /* RegisterProtocols.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift.swift; sourceTree = "<group>"; };
+		37E97B1C28427B5C000897A7 /* RegisterRouter.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift.swift; sourceTree = "<group>"; };
+		37E97B1E28427B68000897A7 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		37E97B2028427B77000897A7 /* RegisterPresenter.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift.swift; sourceTree = "<group>"; };
+		37E97B2228427CE8000897A7 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		37E97B2428427CF4000897A7 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		37E97B2628427CFF000897A7 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		37E97B2828427D0A000897A7 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +408,7 @@
 		37E97AF128425E5A000897A7 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B2828427D0A000897A7 /* LoginPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -399,6 +416,7 @@
 		37E97AF228425E5F000897A7 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B2628427CFF000897A7 /* LoginInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -406,6 +424,7 @@
 		37E97AF328425E68000897A7 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B2428427CF4000897A7 /* LoginRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -413,6 +432,7 @@
 		37E97AF428425E70000897A7 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B2228427CE8000897A7 /* LoginProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -428,6 +448,7 @@
 		37E97AF628425E7B000897A7 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B2028427B77000897A7 /* RegisterPresenter.swift.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -435,6 +456,7 @@
 		37E97AF728425E81000897A7 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B1E28427B68000897A7 /* RegisterInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -442,6 +464,7 @@
 		37E97AF828425E87000897A7 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B1C28427B5C000897A7 /* RegisterRouter.swift.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -449,6 +472,7 @@
 		37E97AF928425E8F000897A7 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				37E97B1A28427B4C000897A7 /* RegisterProtocols.swift.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -619,18 +643,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E97B162842775B000897A7 /* FoodsCollectionViewCell.swift in Sources */,
+				37E97B2328427CE8000897A7 /* LoginProtocols.swift in Sources */,
+				37E97B2928427D0A000897A7 /* LoginPresenter.swift in Sources */,
 				37E97B1328426A32000897A7 /* BasketVC.swift in Sources */,
+				37E97B2128427B77000897A7 /* RegisterPresenter.swift.swift in Sources */,
 				37E97B0F28426A0A000897A7 /* FoodsVC.swift in Sources */,
+				37E97B2528427CF4000897A7 /* LoginRouter.swift in Sources */,
 				37E97B0D284269EC000897A7 /* ProfileVC.swift in Sources */,
 				37E97B0728426328000897A7 /* FoodsInBasketResponse.swift in Sources */,
 				37E97AAB28424EEC000897A7 /* ViewController.swift in Sources */,
 				37E97B0928426703000897A7 /* LoginVC.swift in Sources */,
 				37E97B052842631A000897A7 /* FoodsInBasket.swift.swift in Sources */,
 				37E97B01284262B6000897A7 /* Foods.swift in Sources */,
+				37E97B2728427CFF000897A7 /* LoginInteractor.swift in Sources */,
+				37E97B1F28427B69000897A7 /* RegisterInteractor.swift in Sources */,
 				37E97B03284262CC000897A7 /* FoodsResponse.swift in Sources */,
 				37E97B0B28426715000897A7 /* RegisterVC.swift in Sources */,
 				37E97B1128426A1C000897A7 /* FoodDetailVC.swift in Sources */,
+				37E97B1D28427B5C000897A7 /* RegisterRouter.swift.swift in Sources */,
 				37E97AA728424EEC000897A7 /* AppDelegate.swift in Sources */,
+				37E97B1B28427B4C000897A7 /* RegisterProtocols.swift.swift in Sources */,
 				37E97B1928427931000897A7 /* BasketTableViewCell.swift in Sources */,
 				37E97AA928424EEC000897A7 /* SceneDelegate.swift in Sources */,
 			);

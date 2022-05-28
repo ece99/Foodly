@@ -116,7 +116,7 @@
                         <outlet property="emailTextField" destination="R3g-Bi-685" id="zhZ-F4-qol"/>
                         <outlet property="passwordTextField" destination="GpQ-RW-TKu" id="fYZ-FN-3Da"/>
                         <segue destination="mmu-pR-fgM" kind="presentation" identifier="toSignIn" modalPresentationStyle="fullScreen" id="VBx-Bg-hYT"/>
-                        <segue destination="mr9-kc-DDX" kind="presentation" modalPresentationStyle="fullScreen" id="USe-I8-MGc"/>
+                        <segue destination="mr9-kc-DDX" kind="presentation" identifier="toFoods" modalPresentationStyle="fullScreen" id="USe-I8-MGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -306,7 +306,7 @@
                     <connections>
                         <outlet property="foodCollectionView" destination="u5e-nx-KhC" id="rK6-ri-uwK"/>
                         <outlet property="searchBar" destination="1r5-yt-DN2" id="koG-lO-qw2"/>
-                        <segue destination="qbw-5F-EVh" kind="show" id="cVV-Ec-hRp"/>
+                        <segue destination="qbw-5F-EVh" kind="show" identifier="toFoodDetail" id="cVV-Ec-hRp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbC-3G-eKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -646,7 +646,7 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b8X-xY-w0R">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="LBu-w9-Gjr" kind="relationship" relationship="viewControllers" id="Mle-Ve-vqQ"/>
