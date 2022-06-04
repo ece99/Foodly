@@ -71,7 +71,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3g-Bi-685">
                                         <rect key="frame" x="0.0" y="178.5" width="350" height="66.5"/>
-                                        <color key="textColor" name="PrimaryColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
@@ -83,7 +83,6 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GpQ-RW-TKu">
                                         <rect key="frame" x="0.0" y="329" width="350" height="67"/>
-                                        <color key="textColor" name="PrimaryColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
                                     </textField>
@@ -172,7 +171,6 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-Hg-FNe">
                                         <rect key="frame" x="0.0" y="199" width="350" height="76.5"/>
-                                        <color key="textColor" name="PrimaryColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
@@ -184,7 +182,6 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9f6-8Z-eRH">
                                         <rect key="frame" x="0.0" y="367" width="350" height="76"/>
-                                        <color key="textColor" name="PrimaryColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
                                     </textField>
@@ -249,7 +246,7 @@
             </objects>
             <point key="canvasLocation" x="165" y="826"/>
         </scene>
-        <!--FoodsVC-->
+        <!--FOODLY-->
         <scene sceneID="XQK-ZM-Tnu">
             <objects>
                 <viewController id="N5y-6U-lJ2" customClass="FoodsVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
@@ -331,7 +328,7 @@
                             <constraint firstItem="NnV-ON-AKb" firstAttribute="trailing" secondItem="u5e-nx-KhC" secondAttribute="trailing" constant="32" id="e31-Xb-woT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xkr-BQ-bpp"/>
+                    <navigationItem key="navigationItem" title="FOODLY" id="xkr-BQ-bpp"/>
                     <connections>
                         <outlet property="foodCollectionView" destination="u5e-nx-KhC" id="rK6-ri-uwK"/>
                         <outlet property="foodSearchBar" destination="1r5-yt-DN2" id="you-pu-dpJ"/>
@@ -724,9 +721,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ada-1H-oHq"/>
         <segue reference="zXY-r6-QxN"/>
-        <segue reference="GYH-PQ-TAU"/>
+        <segue reference="4XT-dh-0lH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
