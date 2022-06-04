@@ -9,7 +9,11 @@ import Foundation
 
 class RegisterRouter : PresenterToRouterRegisterProtocol {
     static func createModule(ref: RegisterVC) {
-        ref.registerRresenter = RegisterPresenter()
-        ref.registerRresenter?.registerInteractor = RegisterInteractor()
+        let presenter = RegisterPresenter()
+    
+        ref.registerPresenter = presenter
+        ref.registerPresenter?.registerInteractor = RegisterInteractor()
+        ref.registerPresenter?.registerView = ref
+        ref.registerPresenter?.registerInteractor?.registerPresenter = presenter
     }
 }

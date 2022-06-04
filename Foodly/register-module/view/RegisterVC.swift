@@ -12,7 +12,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var registerRresenter : ViewToPresenterRegisterProtocol?
+    var registerPresenter : ViewToPresenterRegisterProtocol?
 
     
     override func viewDidLoad() {
@@ -23,9 +23,18 @@ class RegisterVC: UIViewController {
     @IBAction func pressRegisterButton(_ sender: Any) {
         
         if let te = emailTextField.text, let tp = passwordTextField.text {
-            registerRresenter?.registerAll(email: te, password: tp)
+            registerPresenter?.registerAll(email: te, password: tp)
         }
-        
+    }
+    
+    @IBAction func pressTurnLoginPageButton(_ sender: Any) {
+        performSegue(withIdentifier: "toLogin", sender: nil)
+    }
+}
+
+extension RegisterVC: PresenterToViewRegisterProtocol {
+    
+    func navigateToLogin() {
         let alert = UIAlertController(title: "WELCOME", message: "Thank you for signing up", preferredStyle: .alert)
         
         let okayAction = UIAlertAction(title: "Okay", style: .default) {
@@ -37,7 +46,8 @@ class RegisterVC: UIViewController {
         
     }
     
-    @IBAction func pressTurnLoginPageButton(_ sender: Any) {
-        performSegue(withIdentifier: "toLogin", sender: nil)
+    func showErrorAlert() {
+        giveWarningAlert(message:"Trying to register incorrectly or incompletely!", title: "Warning")
     }
+
 }

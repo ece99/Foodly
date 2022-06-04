@@ -10,9 +10,17 @@ import Firebase
 
 class LoginInteractor : PresenterToInteractorLoginProtocol {
     
+    var loginPresenter: InteractorToPresenterLoginProtocol?
+    
     func login(email: String, password: String) {
-
+        
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let e = error {
+                print(e)
+                self.loginPresenter?.showErrorAlert()
+            } else {
+                self.loginPresenter?.navigateToFoodsPage()
+            }
+        }
     }
-    
-    
 }

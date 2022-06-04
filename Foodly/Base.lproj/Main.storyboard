@@ -75,7 +75,7 @@
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz1-yn-ucA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz1-yn-ucA">
                                         <rect key="frame" x="0.0" y="260" width="350" height="54"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.019607843137254902" green="0.098039215686274508" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,7 +92,7 @@
                                         <color key="backgroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In">
                                             <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
@@ -103,17 +103,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-BM-K0E">
                                         <rect key="frame" x="0.0" y="507.5" width="350" height="160.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hala hesabın yok mu?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWl-o3-xBn">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="160.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't you have an account yet?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWl-o3-xBn">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="160.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJl-nx-8oT">
-                                                <rect key="frame" x="171" y="0.0" width="179" height="160.5"/>
+                                                <rect key="frame" x="177.5" y="0.0" width="172.5" height="160.5"/>
                                                 <color key="tintColor" name="SecondyColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                                                <buttonConfiguration key="configuration" style="plain" title="Register">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <color key="baseForegroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
@@ -176,7 +176,7 @@
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-Vj-i74">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-Vj-i74">
                                         <rect key="frame" x="0.0" y="290.5" width="350" height="61.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,7 +193,7 @@
                                         <color key="backgroundColor" name="PrimaryColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                                        <buttonConfiguration key="configuration" style="plain" title="Register">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
@@ -206,17 +206,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="C69-bL-gGo">
                                         <rect key="frame" x="0.0" y="566.5" width="350" height="195.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabın var mı?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBe-GU-pf3">
-                                                <rect key="frame" x="0.0" y="0.0" width="121" height="195.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBe-GU-pf3">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="195.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qY-1b-MmO">
-                                                <rect key="frame" x="126" y="0.0" width="224" height="195.5"/>
+                                                <rect key="frame" x="177.5" y="0.0" width="172.5" height="195.5"/>
                                                 <color key="tintColor" name="SecondyColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                                <buttonConfiguration key="configuration" style="plain" title="Log In">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <color key="baseForegroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
@@ -258,11 +258,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-yt-DN2">
-                                <rect key="frame" x="20" y="54" width="374" height="51"/>
+                                <rect key="frame" x="20" y="98" width="374" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u5e-nx-KhC">
-                                <rect key="frame" x="32" y="125" width="350" height="727"/>
+                                <rect key="frame" x="32" y="169" width="350" height="634"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6ga-KF-vRW">
                                     <size key="itemSize" width="268" height="246"/>
@@ -347,20 +347,20 @@
             <objects>
                 <viewController id="qbw-5F-EVh" customClass="FoodDetailVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m12-73-duL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fvx-KJ-mhS">
-                                <rect key="frame" x="0.0" y="44" width="414" height="288"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="215"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-EK-4bG">
-                                <rect key="frame" x="32" y="364" width="41.5" height="20.5"/>
+                                <rect key="frame" x="32" y="335" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SUO-MH-5nq" userLabel="Stepper">
-                                <rect key="frame" x="263" y="364" width="119" height="31"/>
+                                <rect key="frame" x="263" y="335" width="119" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-Zs-Ecb">
                                         <rect key="frame" x="0.0" y="0.0" width="33" height="31"/>
@@ -393,12 +393,12 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iAQ-Mc-qg9">
-                                <rect key="frame" x="32" y="744.5" width="350" height="47.5"/>
+                                <rect key="frame" x="32" y="715.5" width="350" height="47.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-LD-Wed">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="47.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7d-1o-cwc">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7d-1o-cwc">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
@@ -418,7 +418,7 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system" imagePlacement="trailing" title="Sepete Ekle" imagePadding="5">
+                                        <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system" imagePlacement="trailing" title="Add to Basket" imagePadding="5">
                                             <fontDescription key="titleFontDescription" name="Poppins-Light" family="Poppins" pointSize="19"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
@@ -464,7 +464,7 @@
             </objects>
             <point key="canvasLocation" x="4715.9420289855079" y="97.767857142857139"/>
         </scene>
-        <!--Item-->
+        <!--BasketVC-->
         <scene sceneID="nDd-lr-rFa">
             <objects>
                 <viewController id="TXg-JU-lKo" customClass="BasketVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
@@ -547,7 +547,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oK5-LU-X7j">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="44.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-3u-xQf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-3u-xQf">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -566,7 +566,7 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Öde" imagePadding="5">
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Pay" imagePadding="5">
                                             <imageReference key="image" image="creditcard" catalog="system" symbolScale="large"/>
                                             <fontDescription key="titleFontDescription" name="Poppins-Light" family="Poppins" pointSize="19"/>
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -601,7 +601,7 @@
                             <constraint firstItem="xxk-Ke-Vfa" firstAttribute="leading" secondItem="REE-dz-wer" secondAttribute="leading" constant="32" id="svq-0O-2qU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="cart" catalog="system" selectedImage="cart" id="ux7-Y7-jCR">
+                    <tabBarItem key="tabBarItem" title="" image="cart" catalog="system" selectedImage="cart" id="ux7-Y7-jCR">
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <connections>
@@ -613,7 +613,7 @@
             </objects>
             <point key="canvasLocation" x="2905.7971014492755" y="825.66964285714278"/>
         </scene>
-        <!--Item-->
+        <!--ProfileVC-->
         <scene sceneID="HV7-zt-ATj">
             <objects>
                 <viewController id="Egt-rW-b4B" customClass="ProfileVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
@@ -653,7 +653,7 @@
                             <constraint firstItem="0jM-6g-jeC" firstAttribute="centerY" secondItem="l4o-MY-7WN" secondAttribute="centerY" id="ref-Nt-MVo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person" id="yrC-Ix-ENN"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person" id="yrC-Ix-ENN"/>
                     <connections>
                         <outlet property="emailTextField" destination="azZ-qi-qAz" id="YfX-C0-igI"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLoginPage" modalPresentationStyle="fullScreen" id="GYH-PQ-TAU"/>
@@ -684,7 +684,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="SdG-Lb-LKS">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mr9-kc-DDX" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="FoodsPage" automaticallyAdjustsScrollViewInsets="NO" id="mr9-kc-DDX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b8X-xY-w0R">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -703,11 +703,11 @@
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="97.767857142857139"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="93K-vZ-nLT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LBu-w9-Gjr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="homekit" catalog="system" selectedImage="homekit" id="AAF-98-BNa"/>
+                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" selectedImage="homekit" id="AAF-98-BNa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BDR-Ul-Ofm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -724,7 +724,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PBC-Xc-kFz"/>
+        <segue reference="ada-1H-oHq"/>
+        <segue reference="zXY-r6-QxN"/>
         <segue reference="GYH-PQ-TAU"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -7,10 +7,15 @@
 
 import Foundation
 
-class LoginRouter : PresenterToRouter {
+class LoginRouter : PresenterToRouterLoginProtocol {
     static func createModule(ref: LoginVC) {
-        ref.loginPresenter = LoginPresenter()
+       
+        let presenter = LoginPresenter()
+    
+        ref.loginPresenter = presenter
         ref.loginPresenter?.loginInteractor = LoginInteractor()
+        ref.loginPresenter?.loginView = ref
+        ref.loginPresenter?.loginInteractor?.loginPresenter = presenter
     }
     
 }

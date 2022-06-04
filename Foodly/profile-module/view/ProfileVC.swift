@@ -26,9 +26,10 @@ class ProfileVC: UIViewController {
     @IBAction func pressLogoutButton(_ sender: Any) {
         do {
             try Auth.auth().signOut()
-        }catch { print("Already logged out") }
+            performSegue(withIdentifier: "toLoginPage", sender: nil)
+            
+        }catch {giveWarningAlert(message: "Failed to successfully log out of your account!", title: "Warning") }
     
-        performSegue(withIdentifier: "toLoginPage", sender: nil)
     }
 }
 

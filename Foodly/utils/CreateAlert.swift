@@ -27,5 +27,15 @@ extension UIViewController {
     alertController.addAction(OKAction)
     self.present(alertController, animated: true, completion: nil)
   }
+    
+    func giveWarningAlert (message: String, title: String ) {
+      let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default){_ in
+      }
+      alertController.addAction(OKAction)
+      self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
 }
 
