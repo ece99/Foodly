@@ -13,7 +13,7 @@ class BasketInteractor: PresenterToInteractorBasketProtocol {
     
     func getFoodsInBasket(userName: String) {
         
-        var request = URLRequest(url:URL(string:"http://kasimadalan.pe.hu/yemekler/sepettekiYemekleriGetir.php")!)
+        var request = URLRequest(url:URL(string:Constants.baseGetBasketFoodURL)!)
         request.httpMethod = "POST"
         
         let postString = "kullanici_adi=\(userName)"
@@ -32,6 +32,7 @@ class BasketInteractor: PresenterToInteractorBasketProtocol {
                 let result = try decoder.decode(FoodsInBasketResponse.self, from: data!)
                 if let foodListInBasket = result.sepet_yemekler {
                     self.basketPresenter?.sendDataToPresenter(foodListInBasket: foodListInBasket)
+                    
                 }
             }
             catch let error as DecodingError {
@@ -49,7 +50,6 @@ class BasketInteractor: PresenterToInteractorBasketProtocol {
                       print("ERROR: \(error.localizedDescription)")
                     }
                 self.basketPresenter?.sendDataToPresenter(foodListInBasket: [])
-                
             }
             catch {
                 print(error.localizedDescription)
@@ -58,7 +58,7 @@ class BasketInteractor: PresenterToInteractorBasketProtocol {
     }
     
     func deleteFoodFromBasket(sepet_yemek_id: Int, userName: String) {
-        var request = URLRequest(url: URL(string: "http://kasimadalan.pe.hu/yemekler/sepettenYemekSil.php")!)
+        var request = URLRequest(url: URL(string: Constants.baseDeleteFoodFromBasketURL)!)
         request.httpMethod = "POST"
         
         let postString = "sepet_yemek_id=\(sepet_yemek_id)&kullanici_adi=\(userName)"

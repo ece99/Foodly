@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FoodsInBasketResponse: Codable {
+struct FoodsInBasketResponse: Codable {
     var sepet_yemekler : [FoodsInBasket]?
     var success: Int?
 }

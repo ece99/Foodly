@@ -12,7 +12,7 @@ class FoodsInteractor: PresenterToInteractorFoodsProtocol {
     
     func getFoods() {
         
-        let url = URL(string:"http://kasimadalan.pe.hu/yemekler/tumYemekleriGetir.php")!
+        let url = URL(string:Constants.baseGetFoodsURL)!
         
         URLSession.shared.dataTask(with: url){ data,response,error in
             if error != nil || data == nil {

@@ -21,15 +21,14 @@ class FoodDetailVC: UIViewController {
     var basketPresenterObject: ViewToPresenterBasketProtocol?
     
     var count : Int = 1
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         foodName.text = foodDetail?.yemek_adi
-        if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(foodDetail!.yemek_resim_adi)"){
+        if let url = URL(string: Constants.baseGetFoodImageURL + foodDetail!.yemek_resim_adi){
             DispatchQueue.main.async {
-                self.foodImageView.kf.setImage(with: url)            }
+                self.foodImageView.kf.setImage(with: url)
+            }
         }
         
         foodPrice.text = "\(foodDetail!.yemek_fiyat) ₺"
@@ -40,11 +39,25 @@ class FoodDetailVC: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+    
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        
         for i in foodsInBasket {
             if foodDetail?.yemek_adi == i.yemek_adi {
-                count = Int(i.yemek_siparis_adet!)!
+                let size = Int(i.yemek_siparis_adet!)
+                count = size ?? 1
+            }
+        }
+    }
+    
+    func find() {
+        for i in foodsInBasket {
+            if foodDetail?.yemek_adi == i.yemek_adi {
+                let size = Int(i.yemek_siparis_adet!)
+                count = size ?? 1
+                countLabel.text = "\(count)"
             }
         }
     }
@@ -64,21 +77,21 @@ class FoodDetailVC: UIViewController {
         var check = false
         for i in foodsInBasket {
             if foodDetail?.yemek_adi == i.yemek_adi {
+                //let size = Int(i.yemek_siparis_adet!)
                 basketPresenterObject?.deleteFromBasket(sepet_yemek_id: Int(i.sepet_yemek_id!)!, userName: "Ece")
-                foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:Int(i.yemek_siparis_adet!)!, userName: "Ece")
-                
+                foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:count, userName: "Ece")
                 check = true
             }
         }
-        
         if check == false {
             foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:count, userName: "Ece")
         }
         
+        returnToPreviousPageAlert(message: "Products have been successfully added to the cart.", title: "Approved")
     }
     
     func add(){
-        if count >= 1 && count < 20{
+        if count >= 1{
             count += 1
         }
         countLabel.text = "\(count)"
@@ -90,8 +103,8 @@ class FoodDetailVC: UIViewController {
     }
     
     func subtract(){
-        if count > 1 && count <= 20{
-            count -= 1
+        if count > 1{
+           count -= 1
         }
         countLabel.text = "\(count)"
         
@@ -102,8 +115,13 @@ class FoodDetailVC: UIViewController {
     }
 }
 
-extension FoodDetailVC: PresenterToViewFoodDetailProtocol, PresenterToViewBasketProtocol {
+extension FoodDetailVC: PresenterToViewFoodDetailProtocol,PresenterToViewBasketProtocol{
     func sendDataToView(foodListInBasket: Array<FoodsInBasket>) {
             self.foodsInBasket = foodListInBasket
+            DispatchQueue.main.async {
+                self.find()
+        }
     }
 }
+
+

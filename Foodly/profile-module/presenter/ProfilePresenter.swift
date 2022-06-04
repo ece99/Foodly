@@ -8,7 +8,6 @@
 import Foundation
 
 class ProfilePresenter : ViewToPresenterProfileProtocol {
-    
     var profileView: PresenterToViewProfileProtocol?
     var profileInteractor: PresenterToInteractorProfileProtocol?
     
@@ -18,7 +17,6 @@ class ProfilePresenter : ViewToPresenterProfileProtocol {
 }
 
 extension ProfilePresenter : InteractorToPresenterProfileProtocol{
-    
     func sendDataToPresenter(email: String) {
         profileView?.sendDataToView(email: email)
     }

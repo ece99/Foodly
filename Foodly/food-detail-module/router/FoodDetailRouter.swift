@@ -19,9 +19,6 @@ class FoodDetailRouter: PresenterToRouterFoodDetailProtocol {
         ref.basketPresenterObject?.basketInteractor = BasketInteractor()
         ref.basketPresenterObject?.basketView = ref
         ref.basketPresenterObject?.basketInteractor?.basketPresenter = basketPresenter
-        
     }
-    
-    
 }
 

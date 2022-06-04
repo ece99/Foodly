@@ -11,11 +11,13 @@ class BasketRouter: PresenterToRouterProtocol {
     
     static func createModule(ref: BasketVC) {
         let presenter = BasketPresenter()
-        
+    
         ref.basketPresenterObject = presenter
         ref.basketPresenterObject?.basketInteractor = BasketInteractor()
         ref.basketPresenterObject?.basketView = ref
         ref.basketPresenterObject?.basketInteractor?.basketPresenter = presenter
+        
+        
     }
     
     

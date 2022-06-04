@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AddingFoodToBasket: Codable {
+struct AddingFoodToBasket: Codable {
     var message : String?
     var success: Int?
 }

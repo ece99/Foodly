@@ -36,6 +36,7 @@ class BasketVC: UIViewController {
     }
     
     @IBAction func pressPayButton(_ sender: Any) {
+
     }
 }
 
@@ -64,7 +65,7 @@ extension BasketVC: UITableViewDataSource, UITableViewDelegate {
         cell.foodPrice.text = "Per:\(foodList[indexPath.row].yemek_fiyat!) "
         cell.foodCount.text = foodList[indexPath.row].yemek_siparis_adet
         
-        let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\( foodList[indexPath.row].yemek_resim_adi!)")
+        let url = URL(string: Constants.baseGetFoodImageURL + foodList[indexPath.row].yemek_resim_adi!)
         cell.foodImageView.kf.setImage(with: url)
         
         return cell

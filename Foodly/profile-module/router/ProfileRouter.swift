@@ -8,6 +8,7 @@
 import Foundation
 
 class ProfileRouter : PresenterToRouterProfileProtocol {
+    
     static func createModule(ref: ProfileVC) {
         let presenter = ProfilePresenter()
         ref.profilePresenter = presenter

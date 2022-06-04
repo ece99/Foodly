@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FoodsResponse : Codable {
+struct FoodsResponse : Codable {
     var yemekler: [Foods]?
     var success:Int?
 }

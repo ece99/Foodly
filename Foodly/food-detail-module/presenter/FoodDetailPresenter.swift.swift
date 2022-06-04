@@ -22,7 +22,7 @@ class FoodDetailPresenter: ViewToPresenterFoodDetailProtocol, ViewToPresenterBas
     
     var foodInteractor: PresenterToInteractorFoodDetailProtocol?
     
-    func postToBasket(foodName: String, foodImageName: String, foodPrice: Int, foodOrderQuantity: Int, userName: String){
+    func postToBasket(foodName: String, foodImageName: String, foodPrice: Int, foodOrderQuantity: Int, userName: String) {
         foodInteractor?.postFoodToBasket(foodName: foodName, foodImageName: foodImageName, foodPrice: foodPrice, foodOrderQuantity: foodOrderQuantity, userName: userName)
     }
     
@@ -32,5 +32,4 @@ extension FoodDetailPresenter: InteractorToPresenterBasketProtocol {
     func sendDataToPresenter(foodListInBasket: Array<FoodsInBasket>) {
         basketView?.sendDataToView(foodListInBasket: foodListInBasket)
     }
-   
 }

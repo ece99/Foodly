@@ -57,6 +57,15 @@
 		37E97B4E2842953F000897A7 /* BasketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4D2842953E000897A7 /* BasketInteractor.swift */; };
 		37E97B502842954A000897A7 /* BasketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B4F2842954A000897A7 /* BasketPresenter.swift */; };
 		37E97B5228429B02000897A7 /* DeleteFromBasketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E97B5128429B02000897A7 /* DeleteFromBasketResponse.swift */; };
+		37F28A1E284B29CA00709A77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A1D284B29CA00709A77 /* Constants.swift */; };
+		37F28A20284B29E100709A77 /* CreateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A1F284B29E100709A77 /* CreateAlert.swift */; };
+		37F28A23284B2A7800709A77 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37F28A22284B2A7800709A77 /* Alamofire */; };
+		37F28A25284B2AE000709A77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A24284B2AE000709A77 /* NetworkManager.swift */; };
+		37F28A30284B316000709A77 /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A2F284B316000709A77 /* SplashProtocols.swift */; };
+		37F28A33284B318000709A77 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A32284B318000709A77 /* SplashRouter.swift */; };
+		37F28A35284B318E00709A77 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A34284B318E00709A77 /* SplashInteractor.swift */; };
+		37F28A37284B319B00709A77 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A36284B319B00709A77 /* SplashPresenter.swift */; };
+		37F28A39284B31C600709A77 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F28A38284B31C600709A77 /* SplashVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +138,14 @@
 		37E97B4D2842953E000897A7 /* BasketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketInteractor.swift; sourceTree = "<group>"; };
 		37E97B4F2842954A000897A7 /* BasketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPresenter.swift; sourceTree = "<group>"; };
 		37E97B5128429B02000897A7 /* DeleteFromBasketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromBasketResponse.swift; sourceTree = "<group>"; };
+		37F28A1D284B29CA00709A77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37F28A1F284B29E100709A77 /* CreateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlert.swift; sourceTree = "<group>"; };
+		37F28A24284B2AE000709A77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		37F28A2F284B316000709A77 /* SplashProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
+		37F28A32284B318000709A77 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		37F28A34284B318E00709A77 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		37F28A36284B319B00709A77 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		37F28A38284B31C600709A77 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F28A23284B2A7800709A77 /* Alamofire in Frameworks */,
 				37E97B3C28428A90000897A7 /* Kingfisher in Frameworks */,
 				37E97AFE284261C0000897A7 /* FirebaseAuth in Frameworks */,
 			);
@@ -181,6 +199,10 @@
 		37E97AA528424EEC000897A7 /* Foodly */ = {
 			isa = PBXGroup;
 			children = (
+				37F28A29284B30F900709A77 /* splash-module */,
+				37F28A28284B2DAE00709A77 /* app */,
+				37F28A26284B2AE700709A77 /* network */,
+				37F28A1C284B29A400709A77 /* utils */,
 				37E97AFF2842629D000897A7 /* entity */,
 				37E97AD728425D4B000897A7 /* register-module */,
 				37E97AD628425D44000897A7 /* login-module */,
@@ -188,12 +210,8 @@
 				37E97AD928425D85000897A7 /* foods-module */,
 				37E97ADA28425D8D000897A7 /* food-detail-module */,
 				37E97ADB28425D96000897A7 /* basket-module */,
-				37E97AA628424EEC000897A7 /* AppDelegate.swift */,
-				37E97AA828424EEC000897A7 /* SceneDelegate.swift */,
 				37E97AAA28424EEC000897A7 /* ViewController.swift */,
 				37E97AAC28424EEC000897A7 /* Main.storyboard */,
-				37E97AAF28424EEE000897A7 /* Assets.xcassets */,
-				37E97AB128424EEE000897A7 /* LaunchScreen.storyboard */,
 				37E97AB428424EEE000897A7 /* Info.plist */,
 				37E97AFA28425FF4000897A7 /* GoogleService-Info.plist */,
 			);
@@ -560,6 +578,86 @@
 			path = "table-view";
 			sourceTree = "<group>";
 		};
+		37F28A1C284B29A400709A77 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A1D284B29CA00709A77 /* Constants.swift */,
+				37F28A1F284B29E100709A77 /* CreateAlert.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		37F28A26284B2AE700709A77 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A24284B2AE000709A77 /* NetworkManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		37F28A28284B2DAE00709A77 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				37E97AA628424EEC000897A7 /* AppDelegate.swift */,
+				37E97AA828424EEC000897A7 /* SceneDelegate.swift */,
+				37E97AAF28424EEE000897A7 /* Assets.xcassets */,
+				37E97AB128424EEE000897A7 /* LaunchScreen.storyboard */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		37F28A29284B30F900709A77 /* splash-module */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A2E284B314D00709A77 /* protocols */,
+				37F28A2D284B312A00709A77 /* router */,
+				37F28A2C284B312300709A77 /* interactor */,
+				37F28A2B284B311600709A77 /* presenter */,
+				37F28A2A284B311000709A77 /* view */,
+			);
+			path = "splash-module";
+			sourceTree = "<group>";
+		};
+		37F28A2A284B311000709A77 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A38284B31C600709A77 /* SplashVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37F28A2B284B311600709A77 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A36284B319B00709A77 /* SplashPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		37F28A2C284B312300709A77 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A34284B318E00709A77 /* SplashInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		37F28A2D284B312A00709A77 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A32284B318000709A77 /* SplashRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		37F28A2E284B314D00709A77 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				37F28A2F284B316000709A77 /* SplashProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -579,6 +677,7 @@
 			packageProductDependencies = (
 				37E97AFD284261C0000897A7 /* FirebaseAuth */,
 				37E97B3B28428A90000897A7 /* Kingfisher */,
+				37F28A22284B2A7800709A77 /* Alamofire */,
 			);
 			productName = Foodly;
 			productReference = 37E97AA328424EEC000897A7 /* Foodly.app */;
@@ -655,6 +754,7 @@
 			packageReferences = (
 				37E97AFC284261C0000897A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				37E97B3A28428A90000897A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				37F28A21284B2A7700709A77 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 37E97AA428424EEC000897A7 /* Products */;
 			projectDirPath = "";
@@ -700,9 +800,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F28A30284B316000709A77 /* SplashProtocols.swift in Sources */,
+				37F28A20284B29E100709A77 /* CreateAlert.swift in Sources */,
 				37E97B39284283C8000897A7 /* FoodsPresenter.swift in Sources */,
 				37E97B162842775B000897A7 /* FoodsCollectionViewCell.swift in Sources */,
 				37E97B35284283B0000897A7 /* FoodsRouter.swift in Sources */,
+				37F28A25284B2AE000709A77 /* NetworkManager.swift in Sources */,
 				37E97B2328427CE8000897A7 /* LoginProtocols.swift in Sources */,
 				37E97B2928427D0A000897A7 /* LoginPresenter.swift in Sources */,
 				37E97B4E2842953F000897A7 /* BasketInteractor.swift in Sources */,
@@ -711,11 +814,13 @@
 				37E97B33284283A3000897A7 /* FoodsProtocols.swift in Sources */,
 				37E97B1328426A32000897A7 /* BasketVC.swift in Sources */,
 				37E97B2128427B77000897A7 /* RegisterPresenter.swift.swift in Sources */,
+				37F28A1E284B29CA00709A77 /* Constants.swift in Sources */,
 				37E97B2F28428076000897A7 /* ProfileInteractor.swift.swift in Sources */,
 				37E97B0F28426A0A000897A7 /* FoodsVC.swift in Sources */,
 				37E97B2528427CF4000897A7 /* LoginRouter.swift in Sources */,
 				37E97B2B2842805B000897A7 /* ProfileProtocols.swift in Sources */,
 				37E97B0D284269EC000897A7 /* ProfileVC.swift in Sources */,
+				37F28A39284B31C600709A77 /* SplashVC.swift in Sources */,
 				37E97B0728426328000897A7 /* FoodsInBasketResponse.swift in Sources */,
 				37E97AAB28424EEC000897A7 /* ViewController.swift in Sources */,
 				37E97B5228429B02000897A7 /* DeleteFromBasketResponse.swift in Sources */,
@@ -729,10 +834,13 @@
 				37E97B48284291B2000897A7 /* AddingFoodToBasket.swift in Sources */,
 				37E97B0B28426715000897A7 /* RegisterVC.swift in Sources */,
 				37E97B1128426A1C000897A7 /* FoodDetailVC.swift in Sources */,
+				37F28A35284B318E00709A77 /* SplashInteractor.swift in Sources */,
 				37E97B2D28428067000897A7 /* ProfileRouter.swift in Sources */,
+				37F28A37284B319B00709A77 /* SplashPresenter.swift in Sources */,
 				37E97B4428429066000897A7 /* FoodDetailPresenter.swift.swift in Sources */,
 				37E97B1D28427B5C000897A7 /* RegisterRouter.swift.swift in Sources */,
 				37E97AA728424EEC000897A7 /* AppDelegate.swift in Sources */,
+				37F28A33284B318000709A77 /* SplashRouter.swift in Sources */,
 				37E97B3128428080000897A7 /* ProfilePresenter.swift in Sources */,
 				37E97B4C28429534000897A7 /* BasketRouter.swift in Sources */,
 				37E97B502842954A000897A7 /* BasketPresenter.swift in Sources */,
@@ -1122,6 +1230,14 @@
 				kind = branch;
 			};
 		};
+		37F28A21284B2A7700709A77 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1134,6 +1250,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37E97B3A28428A90000897A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		37F28A22284B2A7800709A77 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F28A21284B2A7700709A77 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

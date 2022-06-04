@@ -15,9 +15,7 @@ protocol ViewToPresenterFoodDetailProtocol {
 }
 
 protocol PresenterToInteractorFoodDetailProtocol {
-    
     func postFoodToBasket(foodName: String, foodImageName: String, foodPrice: Int, foodOrderQuantity: Int, userName: String)
-    
 }
 
 protocol InteractorToPresenterFoodDetailProtocol {

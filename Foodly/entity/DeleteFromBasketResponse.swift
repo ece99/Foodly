@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DeleteFromBasketResponse: Codable {
+struct DeleteFromBasketResponse: Codable {
     var success: Int?
     var message: String?
     

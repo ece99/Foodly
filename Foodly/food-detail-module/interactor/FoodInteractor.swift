@@ -10,7 +10,7 @@ import Foundation
 class FoodDetailInteractor: PresenterToInteractorFoodDetailProtocol {
     func postFoodToBasket(foodName: String, foodImageName: String, foodPrice: Int, foodOrderQuantity: Int, userName: String) {
         
-        var request = URLRequest(url: URL(string: "http://kasimadalan.pe.hu/yemekler/sepeteYemekEkle.php")!)
+        var request = URLRequest(url: URL(string: Constants.basePostFoodToBasketURL)!)
         request.httpMethod = "POST"
         
         let postString = "yemek_adi=\(foodName)&yemek_resim_adi=\(foodImageName)&yemek_fiyat=\(foodPrice)&yemek_siparis_adet=\(foodOrderQuantity)&kullanici_adi=\(userName)"
@@ -21,7 +21,6 @@ class FoodDetailInteractor: PresenterToInteractorFoodDetailProtocol {
                 print("Error")
                 return
             }
-                    
             do{
                 let result = try JSONDecoder().decode(AddingFoodToBasket.self, from: data!)
                 print(result.message ?? "No message")

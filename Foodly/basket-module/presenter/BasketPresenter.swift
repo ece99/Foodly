@@ -9,8 +9,7 @@ import Foundation
 
 class BasketPresenter: ViewToPresenterBasketProtocol {
     
-    var basketInteractor: PresenterToInteractorBasketProtocol?
-    
+    var basketInteractor: PresenterToInteractorBasketProtocol?    
     var basketView: PresenterToViewBasketProtocol?
     
     func getAllFoodsInBasket(userName: String) {
@@ -29,5 +28,4 @@ extension BasketPresenter: InteractorToPresenterBasketProtocol {
     func sendDataToPresenter(foodListInBasket: Array<FoodsInBasket>) {
         basketView?.sendDataToView(foodListInBasket: foodListInBasket)
     }
-
 }

@@ -21,7 +21,6 @@ protocol PresenterToInteractorProfileProtocol {
 }
 
 protocol InteractorToPresenterProfileProtocol {
-    
     func sendDataToPresenter(email : String)
 }
 

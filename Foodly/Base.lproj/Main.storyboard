@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vl1-sX-Tgl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vl1-sX-Tgl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,10 +22,34 @@
         </array>
     </customFonts>
     <scenes>
+        <!--SplashVC-->
+        <scene sceneID="9em-Sj-ycO">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenFoodly" id="9C3-Wr-CGe" customClass="SplashVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ai8-zH-c3L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodly" translatesAutoresizingMaskIntoConstraints="NO" id="B3s-vL-6ic">
+                                <rect key="frame" x="0.0" y="241" width="414" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YjQ-AH-hJi"/>
+                        <color key="backgroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="splashToLogin" modalPresentationStyle="fullScreen" id="4mx-OQ-ArX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYT-T9-8hj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="-624.10714285714278"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVCFoodly" id="BYZ-38-t0r" customClass="LoginVC" customModule="Foodly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,23 +351,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fvx-KJ-mhS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="288"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-EK-4bG">
-                                <rect key="frame" x="32" y="330" width="41.5" height="20.5"/>
+                                <rect key="frame" x="32" y="364" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SUO-MH-5nq" userLabel="Stepper">
-                                <rect key="frame" x="263" y="330" width="119" height="31"/>
+                                <rect key="frame" x="263" y="364" width="119" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-Zs-Ecb">
                                         <rect key="frame" x="0.0" y="0.0" width="33" height="31"/>
-                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-">
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="decreaseCount:" destination="qbw-5F-EVh" eventType="touchUpInside" id="FDQ-ym-mSU"/>
                                         </connections>
@@ -351,12 +377,12 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjM-mL-xgw">
                                         <rect key="frame" x="43" y="0.0" width="33" height="31"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
-                                        <color key="textColor" name="SecondyColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoC-nz-XsX">
                                         <rect key="frame" x="86" y="0.0" width="33" height="31"/>
-                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="+"/>
@@ -367,7 +393,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iAQ-Mc-qg9">
-                                <rect key="frame" x="32" y="710.5" width="350" height="47.5"/>
+                                <rect key="frame" x="32" y="744.5" width="350" height="47.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-LD-Wed">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="47.5"/>
@@ -375,7 +401,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7d-1o-cwc">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                                                <color key="textColor" name="PrimaryColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$87.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ5-hG-qoZ">
@@ -384,18 +409,18 @@
                                                     <constraint firstAttribute="width" constant="100" id="BIo-fX-8MP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="21"/>
-                                                <color key="textColor" name="SecondyColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-8Q-tgH">
                                         <rect key="frame" x="130" y="11" width="220" height="36.5"/>
-                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system" imagePlacement="trailing" title="Sepete Ekle" imagePadding="5">
                                             <fontDescription key="titleFontDescription" name="Poppins-Light" family="Poppins" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="addToBasket:" destination="qbw-5F-EVh" eventType="touchUpInside" id="1p8-Iz-hKR"/>
@@ -479,19 +504,16 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7T-JN-Dk5">
                                                                             <rect key="frame" x="0.0" y="0.0" width="189.5" height="20"/>
                                                                             <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
-                                                                            <color key="textColor" name="PrimaryColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n49-59-LKz">
                                                                             <rect key="frame" x="0.0" y="30" width="189.5" height="20"/>
                                                                             <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
-                                                                            <color key="textColor" name="PrimaryColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-jz-Ghe">
                                                                             <rect key="frame" x="0.0" y="60" width="189.5" height="18"/>
                                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                                                            <color key="textColor" name="SecondyColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -528,25 +550,26 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-3u-xQf">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                                                <color key="textColor" name="PrimaryColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2m-5P-stp">
                                                 <rect key="frame" x="0.0" y="20" width="140" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="21"/>
-                                                <color key="textColor" name="SecondyColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cr-DQ-kZz">
                                         <rect key="frame" x="210" y="0.0" width="140" height="44.5"/>
-                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Öde" imagePadding="5">
                                             <imageReference key="image" image="creditcard" catalog="system" symbolScale="large"/>
                                             <fontDescription key="titleFontDescription" name="Poppins-Light" family="Poppins" pointSize="19"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
@@ -578,7 +601,9 @@
                             <constraint firstItem="xxk-Ke-Vfa" firstAttribute="leading" secondItem="REE-dz-wer" secondAttribute="leading" constant="32" id="svq-0O-2qU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="cart" catalog="system" id="ux7-Y7-jCR"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="cart" catalog="system" selectedImage="cart" id="ux7-Y7-jCR">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="basketTableView" destination="2Rn-ZR-Qmm" id="uQc-67-wCj"/>
                         <outlet property="foodsTotalPrice" destination="K2m-5P-stp" id="7nX-h8-YvQ"/>
@@ -613,7 +638,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jM-6g-jeC">
                                 <rect key="frame" x="169.5" y="432.5" width="75.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="pressLogoutButton:" destination="Egt-rW-b4B" eventType="touchUpInside" id="1Cr-ca-Huf"/>
                                 </connections>
@@ -626,7 +653,7 @@
                             <constraint firstItem="0jM-6g-jeC" firstAttribute="centerY" secondItem="l4o-MY-7WN" secondAttribute="centerY" id="ref-Nt-MVo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person" catalog="system" id="yrC-Ix-ENN"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person" id="yrC-Ix-ENN"/>
                     <connections>
                         <outlet property="emailTextField" destination="azZ-qi-qAz" id="YfX-C0-igI"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLoginPage" modalPresentationStyle="fullScreen" id="GYH-PQ-TAU"/>
@@ -652,7 +679,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0l-Lx-XgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2.8985507246376816" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-949" y="123"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SdG-Lb-LKS">
@@ -660,8 +687,11 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mr9-kc-DDX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b8X-xY-w0R">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.019607843140000001" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="LBu-w9-Gjr" kind="relationship" relationship="viewControllers" id="Mle-Ve-vqQ"/>
@@ -677,7 +707,7 @@
         <scene sceneID="93K-vZ-nLT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LBu-w9-Gjr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="homekit" catalog="system" id="AAF-98-BNa"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="homekit" catalog="system" selectedImage="homekit" id="AAF-98-BNa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BDR-Ul-Ofm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -700,6 +730,7 @@
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="foodly" width="786" height="728"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="PrimaryColor">
@@ -708,8 +739,14 @@
         <namedColor name="SecondyColor">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
