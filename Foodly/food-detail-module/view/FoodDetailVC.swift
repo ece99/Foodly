@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 import Kingfisher
 
 class FoodDetailVC: UIViewController {
@@ -35,7 +36,7 @@ class FoodDetailVC: UIViewController {
         
         FoodDetailRouter.createModule(ref: self)
         BasketRouter.createModule(ref: (self.navigationController?.tabBarController?.viewControllers![1]) as! BasketVC)
-        basketPresenterObject?.getAllFoodsInBasket(userName: "Ece")
+        basketPresenterObject?.getAllFoodsInBasket(userName: "\(Auth.auth().currentUser?.email ?? "Ece")")
 
     }
     
@@ -78,13 +79,13 @@ class FoodDetailVC: UIViewController {
         for i in foodsInBasket {
             if foodDetail?.yemek_adi == i.yemek_adi {
                 //let size = Int(i.yemek_siparis_adet!)
-                basketPresenterObject?.deleteFromBasket(sepet_yemek_id: Int(i.sepet_yemek_id!)!, userName: "Ece")
-                foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:count, userName: "Ece")
+                basketPresenterObject?.deleteFromBasket(sepet_yemek_id: Int(i.sepet_yemek_id!)!, userName: "\(Auth.auth().currentUser?.email ?? "Ece")")
+                foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:count, userName: "\(Auth.auth().currentUser?.email ?? "Ece")")
                 check = true
             }
         }
         if check == false {
-            foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:count, userName: "Ece")
+            foodPresenterObject?.postToBasket(foodName: foodDetail!.yemek_adi, foodImageName: foodDetail!.yemek_resim_adi, foodPrice: Int(foodDetail!.yemek_fiyat)!, foodOrderQuantity:count, userName: "\(Auth.auth().currentUser?.email ?? "Ece")")
         }
         
         returnToPreviousPageAlert(message: "Products have been successfully added to the cart.", title: "Approved")

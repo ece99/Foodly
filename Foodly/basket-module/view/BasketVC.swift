@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BasketVC: UIViewController {
 
@@ -23,7 +24,7 @@ class BasketVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        basketPresenterObject?.getAllFoodsInBasket(userName: "Ece")
+        basketPresenterObject?.getAllFoodsInBasket(userName: "\(Auth.auth().currentUser?.email ?? "Ece")")
         calculateTotalPrice()
     }
     
@@ -73,7 +74,7 @@ extension BasketVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action,view,void) in
-            self.basketPresenterObject?.deleteFromBasket(sepet_yemek_id: Int(self.foodList[indexPath.row].sepet_yemek_id!)!, userName: "Ece")
+            self.basketPresenterObject?.deleteFromBasket(sepet_yemek_id: Int(self.foodList[indexPath.row].sepet_yemek_id!)!, userName: "\(Auth.auth().currentUser?.email ?? "Ece")")
         }
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
