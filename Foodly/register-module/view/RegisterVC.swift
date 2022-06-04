@@ -17,6 +17,7 @@ class RegisterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
         RegisterRouter.createModule(ref: self)
     }
 
